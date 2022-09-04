@@ -20,7 +20,7 @@ error_help () {
 }
 
 install () {
-    mkdir /opt/distrod || error "Failed to create /opt/distrod."
+    mkdir -p /opt/distrod || error "Failed to create /opt/distrod."
     cd /opt/distrod || error "Could not change directory to /opt/distrod"
     get_release_file
     tar xvf opt_distrod.tar.gz
